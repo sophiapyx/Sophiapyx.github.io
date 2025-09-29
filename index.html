@@ -1,15 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A2 — Personal Website — Yaxi Peng</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
-<body>
-    <h1 id="title">Hello, VS Code!</h1>
-    <button id="changeColorBtn">Change Color</button>
+<body class="theme-professional">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 id="site-name">Yaxi Peng</h1>
+        <p class="tagline"> Technology • Creativity • Music • Design</p>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="visualizations.html">Visualizations</a></li>
+          <li><a href="resource/sophia.pdf" target="_blank">Portfolio</a></li> 
+          <li><a href="#contact">Contact</a></li> 
+        </ul>
+        <button id="theme-btn" class="theme-btn" title="Switch theme">Theme</button>
+      </nav>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main class="container">
+    <section class="hero">
+      <img class="avatar" src="resource/sophia.jpeg" alt="Profile photo" />
+      <div class="hero-text">
+        <h2>Hello, I’m <span class="name">Yaxi Peng</span></h2>
+        <p class="lead">With a background in <strong>Music Education</strong> and a Master’s in <strong>Interactive Media</strong> from Peking University, my work focuses on sound, interaction, and digital experiences, exploring how technology, creativity, and design come together.</p>
+        <p class="cta">
+          <a class="btn" href="mailto:sophiayx321@gmail.com">Email</a>
+          <a class="btn outline" href="visualizations.html">View Visualizations</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="education" class="card">
+      <h3>Education</h3>
+      <ul class="list">
+        <li>
+          <strong>Peking University</strong> — Master of Software Engineering in Interactive Media Art (2011–2014)  
+          GPA: 3.79/4.00  
+          <details>
+            <summary>Courses</summary>
+            <p>Interaction Design (93), Virtual & Augmented Reality (90), Interactive Music Creation (92), Electronic Music (91), Computer Music (91), Game Design.</p>
+          </details>
+        </li>
+        <li>
+          <strong>Sichuan Conservatory of Music</strong> — Bachelor of Music in Music Education (2006–2010)
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h3>Skills</h3>
+      <div class="badges">
+        <button class="badge" data-copy="HTML">HTML</button>
+        <button class="badge" data-copy="CSS">CSS</button>
+        <button class="badge" data-copy="JavaScript">JavaScript(basic)</button>
+        <button class="badge" data-copy="Python">Python(basic)</button>
+        <button class="badge" data-copy="Figma">Figma</button>
+        <button class="badge" data-copy="Photoshop">Photoshop</button>
+        <button class="badge" data-copy="After Effects">After Effects</button>
+        <button class="badge" data-copy="Cubase">Cubase</button>
+        <button class="badge" data-copy="Max">Max</button>
+        <button class="badge" data-copy="Unity">Kinect(basic)</button>
+        
+        
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h3>Professional Experience</h3>
+      <ul class="list">
+        <li>
+          <strong>Product Manager — Chengdu Fengdi Co., Ltd. (2020–2022)</strong>  
+          <details>
+            <summary></summary>
+            <ul>
+              <li>Designed a virtual showroom using AR + Kinect, boosting engagement 40% and sales 30%.</li>
+              <li>Led IA & prototype design for “MeiLiDa” app, surpassing user growth targets by 150%.</li>
+              <li>Refined user flows with usability testing, improving retention by 25%.</li>
+            </ul>
+          </details>
+        </li>
+        <li>
+          <strong>Interaction Designer — Chengdu Meirui Technology Co., Ltd. (2014–2020)</strong>  
+          <details>
+            <summary></summary>
+            <ul>
+              <li>Designed “Rescue Migica” game with narrative + music, reaching 95% player satisfaction.</li>
+              <li>Integrated multisensory feedback, raising retention 65% after updates.</li>
+              <li>Increased daily active users by 300% across six updates.</li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Projects & Thesis</h3>
+      <ul class="list">
+        <li>
+          <strong>Master’s Thesis:</strong> Design and Implementation of Personalized Educational Software for Ethnic Musical Instruments Based on Immersive Experience  
+          <details><summary></summary><p> Developed a theoretical model based on literature review and interaction design principles to explore factors influencing kindergraden children's immersive experiences in personalized education software. Conducted a competitive analysis and user research to address challenges related to kindergarten children's attention spans, resulting in a gamified music education platform with four original songs and interface transition sounds. </p></details>
+        </li>
+        <li>
+          <strong>“Music Tribe” Kinect Music Game</strong> — Lead Designer & Composer (2013)  
+          <details><summary></summary><p>Designed gameplay and responsibility for the design, production, and implementation of all in-game sound effects, including character motion sounds, environmental audio, and interactive sound cues(e.g., clicks, button feedback). Composed four distinct music pieces, ensuring consistency between sound design and the visual style of the game's UI elements.</p></details>
+        </li>
+        <li>
+          <strong>“T-Easy” Navigation App</strong> — Lead Designer (2012)  
+          <details><summary></summary><p>Conducted market research and designed the "T-Easy" app to integrate map functionality with user needs, including recommendations for dining, accommodations, transportation, and cultural attractions. Incorporated features like route history, sharing, voice guides, photo sharing, and offline capabilities to enhance user experience based on usability test findings.</p></details>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:sophiayx321@gmail.com">sophiayx321@gmail.com</a></p>
+      <p><a href="https://github.com/sophiapyx" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/sophia-peng-060946364/" target="_blank">LinkedIn</a></p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Your email
+          <input id="email" type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          Message
+          <textarea id="message" name="message" rows="4" placeholder="Hi! I'm interested..." required></textarea>
+        </label>
+        <div class="form-row">
+          <button type="submit" class="btn">Send</button>
+          <button type="button" id="clear-btn" class="btn outline">Clear</button>
+        </div>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Yaxi Peng — <a href="visualizations.html">View Visualizations</a></p>
+      
+    </div>
+  </footer>
 </body>
 </html>
