@@ -9,10 +9,15 @@ The purpose of this project is to demonstrate web development skills, including 
 - **JavaScript**: Dynamic interactions and functionalities.
 
 ## How to View the Website
+
+### Local (Optional)
 1. Clone or download this repository to your local machine.
 2. Open the `index.html` file in a web browser (Chrome, Firefox, or Safari recommended).
 3. Navigate through the pages using the links or buttons provided on the website.
 4. Test interactive elements such as buttons, forms, or color/theme switchers.
+
+### Online (Recommended)
+The website is hosted on GitHub Pages. You can view it directly by clicking this link: https://sophiapyx.github.io
 
 ## Features
 - Theme switcher for changing background colors.
