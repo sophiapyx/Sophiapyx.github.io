@@ -57,40 +57,4 @@ body { font-family: var(--font-stack); background: var(--bg); color: var(--text)
 .form-status { margin-top:8px; color:green; font-weight:600; }
 
 /* footer */
-.site-footer { padding:16px 0; color:var(--muted); font-size:0.9rem; text-align:center; }
-
-/* responsive layout */
-@media (min-width:900px){
-  .hero { display:flex; }
-}
-@media (max-width:899px){
-  .container { padding:14px; }
-  .hero { flex-direction:column; align-items:flex-start; }
-  .avatar { width:96px; height:96px; }
-  .menu-btn { display:inline-block; }
-  .nav-list { display:none; position:absolute; right:20px; top:68px; background:var(--card); flex-direction:column; padding:12px; border-radius:8px; box-shadow:var(--shadow); }
-  .nav-list.open { display:flex; }
-}
-
-/* chart / svg styling */
-svg { display:block; max-width:100%; }
-
-/* theme variants (three example themes) */
-body.theme-professional { --accent:#0b6cff; --bg:#f6f8fb; --card:#ffffff; --text:#112; }
-body.theme-creative { --accent:#ff6f61; --bg:#0b0f1a; --card:#0f1724; --text:#eef2ff; --muted:#9aa7bf; }
-body.theme-playful { --accent:#8b5cf6; --bg:#fffaf6; --card:#ffffff; --text:#222; --muted:#7b6f9a; }
-
-/* small niceties */
-details summary { cursor: pointer; }
-
-/* *** ：Observable Embed Styling *** */
-.observable-embed-wrapper {
-  margin-top: 15px;
-  padding: 10px 0; 
-}
-
-/* Make sure the Iframe ADAPTS to the container width on any screen */
-.observable-embed-wrapper iframe {
-  max-width: 100%;
-  display: block; 
-}
+.site-footer { padding:16px 0; color:var(--
