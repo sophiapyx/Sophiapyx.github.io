@@ -83,13 +83,13 @@ body.theme-playful { --accent:#8b5cf6; --bg:#fffaf6; --card:#ffffff; --text:#222
 /* small niceties */
 details summary { cursor: pointer; }
 
-/* *** 新增：Observable Embed Styling *** */
+/* *** ：Observable Embed Styling *** */
 .observable-embed-wrapper {
   margin-top: 15px;
   padding: 10px 0; 
 }
 
-/* 确保 Iframe 在任何屏幕上都适应容器宽度 */
+/* Make sure the Iframe ADAPTS to the container width on any screen */
 .observable-embed-wrapper iframe {
   max-width: 100%;
   display: block; 
